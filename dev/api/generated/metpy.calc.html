@@ -188,6 +188,7 @@
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.shearing_stretching_deformation.html">shearing_stretching_deformation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.sigma_to_pressure.html">sigma_to_pressure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.significant_tornado.html">significant_tornado</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metpy.calc.specific_humidity_from_mixing_ratio.html">specific_humidity_from_mixing_ratio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.storm_relative_helicity.html">storm_relative_helicity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.stretching_deformation.html">stretching_deformation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.supercell_composite.html">supercell_composite</a></li>
@@ -465,37 +466,40 @@
 <tr class="row-even"><td><a class="reference internal" href="metpy.calc.significant_tornado.html#metpy.calc.significant_tornado" title="metpy.calc.significant_tornado"><code class="xref py py-obj docutils literal"><span class="pre">significant_tornado</span></code></a>(sbcape,&nbsp;sblcl,&nbsp;…)</td>
 <td>Calculate the significant tornado parameter (fixed layer).</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.storm_relative_helicity.html#metpy.calc.storm_relative_helicity" title="metpy.calc.storm_relative_helicity"><code class="xref py py-obj docutils literal"><span class="pre">storm_relative_helicity</span></code></a>(u,&nbsp;v,&nbsp;heights,&nbsp;depth)</td>
+<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.specific_humidity_from_mixing_ratio.html#metpy.calc.specific_humidity_from_mixing_ratio" title="metpy.calc.specific_humidity_from_mixing_ratio"><code class="xref py py-obj docutils literal"><span class="pre">specific_humidity_from_mixing_ratio</span></code></a>(mixing_ratio)</td>
+<td>Calculate the specific humidity from the mixing ratio.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="metpy.calc.storm_relative_helicity.html#metpy.calc.storm_relative_helicity" title="metpy.calc.storm_relative_helicity"><code class="xref py py-obj docutils literal"><span class="pre">storm_relative_helicity</span></code></a>(u,&nbsp;v,&nbsp;heights,&nbsp;depth)</td>
 <td>Calculate storm relative helicity.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="metpy.calc.stretching_deformation.html#metpy.calc.stretching_deformation" title="metpy.calc.stretching_deformation"><code class="xref py py-obj docutils literal"><span class="pre">stretching_deformation</span></code></a>(u,&nbsp;v,&nbsp;dx,&nbsp;dy)</td>
+<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.stretching_deformation.html#metpy.calc.stretching_deformation" title="metpy.calc.stretching_deformation"><code class="xref py py-obj docutils literal"><span class="pre">stretching_deformation</span></code></a>(u,&nbsp;v,&nbsp;dx,&nbsp;dy)</td>
 <td>Calculate the stretching deformation of the horizontal wind.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.supercell_composite.html#metpy.calc.supercell_composite" title="metpy.calc.supercell_composite"><code class="xref py py-obj docutils literal"><span class="pre">supercell_composite</span></code></a>(mucape,&nbsp;…)</td>
+<tr class="row-even"><td><a class="reference internal" href="metpy.calc.supercell_composite.html#metpy.calc.supercell_composite" title="metpy.calc.supercell_composite"><code class="xref py py-obj docutils literal"><span class="pre">supercell_composite</span></code></a>(mucape,&nbsp;…)</td>
 <td>Calculate the supercell composite parameter.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="metpy.calc.surface_based_cape_cin.html#metpy.calc.surface_based_cape_cin" title="metpy.calc.surface_based_cape_cin"><code class="xref py py-obj docutils literal"><span class="pre">surface_based_cape_cin</span></code></a>(pressure,&nbsp;…)</td>
+<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.surface_based_cape_cin.html#metpy.calc.surface_based_cape_cin" title="metpy.calc.surface_based_cape_cin"><code class="xref py py-obj docutils literal"><span class="pre">surface_based_cape_cin</span></code></a>(pressure,&nbsp;…)</td>
 <td>Calculate surface-based CAPE and CIN.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.tke.html#metpy.calc.tke" title="metpy.calc.tke"><code class="xref py py-obj docutils literal"><span class="pre">tke</span></code></a>(u,&nbsp;v,&nbsp;w[,&nbsp;perturbation,&nbsp;axis])</td>
+<tr class="row-even"><td><a class="reference internal" href="metpy.calc.tke.html#metpy.calc.tke" title="metpy.calc.tke"><code class="xref py py-obj docutils literal"><span class="pre">tke</span></code></a>(u,&nbsp;v,&nbsp;w[,&nbsp;perturbation,&nbsp;axis])</td>
 <td>Compute turbulence kinetic energy.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="metpy.calc.total_deformation.html#metpy.calc.total_deformation" title="metpy.calc.total_deformation"><code class="xref py py-obj docutils literal"><span class="pre">total_deformation</span></code></a>(u,&nbsp;v,&nbsp;dx,&nbsp;dy)</td>
+<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.total_deformation.html#metpy.calc.total_deformation" title="metpy.calc.total_deformation"><code class="xref py py-obj docutils literal"><span class="pre">total_deformation</span></code></a>(u,&nbsp;v,&nbsp;dx,&nbsp;dy)</td>
 <td>Calculate the horizontal total deformation of the horizontal wind.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.v_vorticity.html#metpy.calc.v_vorticity" title="metpy.calc.v_vorticity"><code class="xref py py-obj docutils literal"><span class="pre">v_vorticity</span></code></a>(u,&nbsp;v,&nbsp;dx,&nbsp;dy)</td>
+<tr class="row-even"><td><a class="reference internal" href="metpy.calc.v_vorticity.html#metpy.calc.v_vorticity" title="metpy.calc.v_vorticity"><code class="xref py py-obj docutils literal"><span class="pre">v_vorticity</span></code></a>(u,&nbsp;v,&nbsp;dx,&nbsp;dy)</td>
 <td>Calculate the vertical vorticity of the horizontal wind.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="metpy.calc.vapor_pressure.html#metpy.calc.vapor_pressure" title="metpy.calc.vapor_pressure"><code class="xref py py-obj docutils literal"><span class="pre">vapor_pressure</span></code></a>(pressure,&nbsp;mixing)</td>
+<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.vapor_pressure.html#metpy.calc.vapor_pressure" title="metpy.calc.vapor_pressure"><code class="xref py py-obj docutils literal"><span class="pre">vapor_pressure</span></code></a>(pressure,&nbsp;mixing)</td>
 <td>Calculate water vapor (partial) pressure.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.virtual_potential_temperature.html#metpy.calc.virtual_potential_temperature" title="metpy.calc.virtual_potential_temperature"><code class="xref py py-obj docutils literal"><span class="pre">virtual_potential_temperature</span></code></a>(pressure,&nbsp;…)</td>
+<tr class="row-even"><td><a class="reference internal" href="metpy.calc.virtual_potential_temperature.html#metpy.calc.virtual_potential_temperature" title="metpy.calc.virtual_potential_temperature"><code class="xref py py-obj docutils literal"><span class="pre">virtual_potential_temperature</span></code></a>(pressure,&nbsp;…)</td>
 <td>Calculate virtual potential temperature.</td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="metpy.calc.virtual_temperature.html#metpy.calc.virtual_temperature" title="metpy.calc.virtual_temperature"><code class="xref py py-obj docutils literal"><span class="pre">virtual_temperature</span></code></a>(temperature,&nbsp;mixing[,&nbsp;…])</td>
+<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.virtual_temperature.html#metpy.calc.virtual_temperature" title="metpy.calc.virtual_temperature"><code class="xref py py-obj docutils literal"><span class="pre">virtual_temperature</span></code></a>(temperature,&nbsp;mixing[,&nbsp;…])</td>
 <td>Calculate virtual temperature.</td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="metpy.calc.windchill.html#metpy.calc.windchill" title="metpy.calc.windchill"><code class="xref py py-obj docutils literal"><span class="pre">windchill</span></code></a>(temperature,&nbsp;speed[,&nbsp;…])</td>
+<tr class="row-even"><td><a class="reference internal" href="metpy.calc.windchill.html#metpy.calc.windchill" title="metpy.calc.windchill"><code class="xref py py-obj docutils literal"><span class="pre">windchill</span></code></a>(temperature,&nbsp;speed[,&nbsp;…])</td>
 <td>Calculate the Wind Chill Temperature Index (WCTI).</td>
 </tr>
 </tbody>
@@ -525,7 +529,7 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, MetPy Developers.
-      Last updated on Nov 03, 2017 at 16:03:50.
+      Last updated on Nov 16, 2017 at 00:34:45.
 
     </p>
   </div>
@@ -563,7 +567,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'0.6.0+96.gd290880',
+            VERSION:'0.6.1+8.gab464ff',
             LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

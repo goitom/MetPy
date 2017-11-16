@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>find_intersections &mdash; MetPy 0.6</title>
+  <title>specific_humidity_from_mixing_ratio &mdash; MetPy 0.6</title>
   
 
   
@@ -17,7 +17,7 @@
   
   
   
-    <link rel="canonical" href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.find_intersections.html"/>
+    <link rel="canonical" href="https://unidata.github.io/MetPy/latest/api/generated/metpy.calc.specific_humidity_from_mixing_ratio.html"/>
   
 
   
@@ -45,8 +45,8 @@
         <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="MetPy 0.6" href="../../index.html"/>
         <link rel="up" title="calc" href="metpy.calc.html"/>
-        <link rel="next" title="friction_velocity" href="metpy.calc.friction_velocity.html"/>
-        <link rel="prev" title="equivalent_potential_temperature" href="metpy.calc.equivalent_potential_temperature.html"/> 
+        <link rel="next" title="storm_relative_helicity" href="metpy.calc.storm_relative_helicity.html"/>
+        <link rel="prev" title="significant_tornado" href="metpy.calc.significant_tornado.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -142,7 +142,7 @@
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.dry_lapse.html">dry_lapse</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.el.html">el</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.equivalent_potential_temperature.html">equivalent_potential_temperature</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">find_intersections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="metpy.calc.find_intersections.html">find_intersections</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.friction_velocity.html">friction_velocity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.frontogenesis.html">frontogenesis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.geostrophic_wind.html">geostrophic_wind</a></li>
@@ -188,7 +188,7 @@
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.shearing_stretching_deformation.html">shearing_stretching_deformation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.sigma_to_pressure.html">sigma_to_pressure</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.significant_tornado.html">significant_tornado</a></li>
-<li class="toctree-l3"><a class="reference internal" href="metpy.calc.specific_humidity_from_mixing_ratio.html">specific_humidity_from_mixing_ratio</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">specific_humidity_from_mixing_ratio</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.storm_relative_helicity.html">storm_relative_helicity</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.stretching_deformation.html">stretching_deformation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="metpy.calc.supercell_composite.html">supercell_composite</a></li>
@@ -259,13 +259,13 @@
         
           <li><a href="metpy.calc.html">calc</a> &raquo;</li>
         
-      <li>find_intersections</li>
+      <li>specific_humidity_from_mixing_ratio</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/api/generated/metpy.calc.find_intersections.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/api/generated/metpy.calc.specific_humidity_from_mixing_ratio.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -278,36 +278,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="find-intersections">
-<h1>find_intersections<a class="headerlink" href="#find-intersections" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="specific-humidity-from-mixing-ratio">
+<h1>specific_humidity_from_mixing_ratio<a class="headerlink" href="#specific-humidity-from-mixing-ratio" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
-<dt id="metpy.calc.find_intersections">
-<code class="descclassname">metpy.calc.</code><code class="descname">find_intersections</code><span class="sig-paren">(</span><em>x</em>, <em>a</em>, <em>b</em>, <em>direction='all'</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/metpy/calc/tools.html#find_intersections"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#metpy.calc.find_intersections" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calculate the best estimate of intersection.</p>
-<p>Calculates the best estimates of the intersection of two y-value
-data sets that share a common x-value set.</p>
+<dt id="metpy.calc.specific_humidity_from_mixing_ratio">
+<code class="descclassname">metpy.calc.</code><code class="descname">specific_humidity_from_mixing_ratio</code><span class="sig-paren">(</span><em>mixing_ratio</em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/metpy/calc/thermo.html#specific_humidity_from_mixing_ratio"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#metpy.calc.specific_humidity_from_mixing_ratio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate the specific humidity from the mixing ratio.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>x</strong> (<em>array-like</em>) – 1-dimensional array of numeric x-values</li>
-<li><strong>a</strong> (<em>array-like</em>) – 1-dimensional array of y-values for line 1</li>
-<li><strong>b</strong> (<em>array-like</em>) – 1-dimensional array of y-values for line 2</li>
-<li><strong>direction</strong> (<a class="reference external" href="https://docs.python.org/3/library/string.html#module-string" title="(in Python v3.6)"><em>string</em></a><em>, </em><em>optional</em>) – specifies direction of crossing. ‘all’, ‘increasing’ (a becoming greater than b),
-or ‘decreasing’ (b becoming greater than a). Defaults to ‘all’.</li>
-</ul>
-</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>mixing_ratio</strong> (<em class="xref py py-obj">pint.Quantity</em>) – mixing ratio</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
-<li><em>A tuple (x, y) of array-like with the x and y coordinates of the</em></li>
-<li><em>intersections of the lines.</em></li>
-</ul>
-</p>
-</td>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><em class="xref py py-obj">pint.Quantity</em> – Specific humidity</td>
 </tr>
 </tbody>
 </table>
+<p class="rubric">Notes</p>
+<p>Formula from <a class="reference internal" href="../../references.html#salby1996" id="id1">[Salby1996]</a> pg. 118.</p>
+<div class="math">
+\[q = \frac{w}{1+w}\]</div>
+<ul class="simple">
+<li><span class="math">\(w\)</span> is mixing ratio</li>
+<li><span class="math">\(q\)</span> is the specific humidity</li>
+</ul>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="metpy.calc.mixing_ratio.html#metpy.calc.mixing_ratio" title="metpy.calc.mixing_ratio"><code class="xref py py-func docutils literal"><span class="pre">mixing_ratio()</span></code></a>, <a class="reference internal" href="metpy.calc.mixing_ratio_from_specific_humidity.html#metpy.calc.mixing_ratio_from_specific_humidity" title="metpy.calc.mixing_ratio_from_specific_humidity"><code class="xref py py-func docutils literal"><span class="pre">mixing_ratio_from_specific_humidity()</span></code></a></p>
+</div>
 </dd></dl>
 
 <div style='clear:both'></div></div>
@@ -322,10 +320,10 @@ or ‘decreasing’ (b becoming greater than a). Defaults to ‘all’.</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="metpy.calc.friction_velocity.html" class="btn btn-neutral float-right" title="friction_velocity" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="metpy.calc.storm_relative_helicity.html" class="btn btn-neutral float-right" title="storm_relative_helicity" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="metpy.calc.equivalent_potential_temperature.html" class="btn btn-neutral" title="equivalent_potential_temperature" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="metpy.calc.significant_tornado.html" class="btn btn-neutral" title="significant_tornado" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

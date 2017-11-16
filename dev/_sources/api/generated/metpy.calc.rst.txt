@@ -71,6 +71,7 @@ calc
       shearing_stretching_deformation
       sigma_to_pressure
       significant_tornado
+      specific_humidity_from_mixing_ratio
       storm_relative_helicity
       stretching_deformation
       supercell_composite
